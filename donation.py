@@ -1,7 +1,6 @@
 python
 import sqlite3
 
-
 def donasi():
     conn = sqlite3.connect("donasi.db")
     cursor = conn.cursor()
@@ -17,3 +16,5 @@ def donasi():
 
     conn.commit()
     conn.close()
+
+    print("Donasi berhasil!")
